@@ -14,6 +14,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/xfce/%{name}-%{version}.tar.gz
+# Source0-md5:	04c197eee32d712a49170539d50279ea
 Source1:	xfsamba.desktop
 Source2:	xfsamba.png
 Source3:	%{name}-xsession.desktop
