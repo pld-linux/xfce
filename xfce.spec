@@ -1,13 +1,13 @@
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
 Name:		xfce
-Version:	3.3.3
+Version:	3.4.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Group(pl):	X11/Aplikacje
 Source0:	http://www.xfce.org/archive/%{name}-%{version}.tar.gz
-URL:		http://www.xfce.org
+URL:		http://www.xfce.org/
 Requires:	imlib-cfgeditor
 BuildRequires:	gettext-devel
 BuildRequires:	imlib-devel
@@ -17,6 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		%{_prefix}/man
+%define		_sysconfigdir	/etc
 
 %description
 XFce is a lightweight and powerfull desktop environment for Linux and
@@ -54,5 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/*
+%{_sysconfigdir}/xfce
 %{_mandir}/*/*
 %{_datadir}/xfce
