@@ -78,11 +78,11 @@ bez u¿ywania smbmount.
 rm -f acinclude.m4
 
 %build
-#libtoolize --copy --force
-#gettextize --copy --force
-#aclocal
-#autoconf
-#automake -a -c
+libtoolize --copy --force
+gettextize --copy --force
+aclocal
+autoconf
+automake -a -c
 %configure \
 	--disable-dt \
 	--enable-gdk-pixbuf \
