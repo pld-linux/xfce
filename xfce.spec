@@ -1,10 +1,11 @@
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
 Name:		xfce
-Version:	3.5.0
+Version:	3.5.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
+Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
 Source0:	http://www.xfce.org/archive/%{name}-%{version}.tar.gz
 URL:		http://www.xfce.org/
@@ -32,6 +33,7 @@ oraz mened¿er okien.
 Summary:	Xfce gtk+ theme
 Summary(pl):	Temat do gtk+ dla xfce
 Group:		Themes/Gtk
+Group(de):	Themen/Gtk
 Group(pl):	Motywy/Gtk
 
 %description -n gtk-theme-xfce
@@ -45,7 +47,6 @@ Temat do gtk+ dla xfce.
 
 %build
 gettextize --copy --force
-LDFLAGS="-s"; export LDFLAGS
 %configure \
 	--disable-dt
 
