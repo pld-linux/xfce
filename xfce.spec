@@ -1,7 +1,7 @@
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
 Name:		xfce
-Version:	3.4.4
+Version:	3.5.0
 Release:	1
 License:	GPL
 Group:		X11/Applications
@@ -28,6 +28,18 @@ XFce jest niewielkim, ale posiadaj±cym du¿e mo¿liwo¶ci ¶rodowiskiem
 dla Linuxa i innych odmian UNIXa. XFce posiada w³asy pasek na¿êdzi
 oraz mened¿er okien.
 
+%package -n gtk-theme-xfce
+Summary:	Xfce gtk+ theme
+Summary(pl):	Temat do gtk+ dla xfce
+Group:		Themes/Gtk
+Group(pl):	Motywy/Gtk
+
+%description -n gtk-theme-xfce
+Xfce Gtk+ engine theme.
+
+%description -l pl -n gtk-theme-xfce
+Temat do gtk+ dla xfce.
+
 %prep
 %setup -q
 
@@ -46,6 +58,8 @@ rm -rf $RPM_BUILD_ROOT
 gzip -9nf README* AUTHORS TODO NEWS ChangeLog \
 	$RPM_BUILD_ROOT%{_mandir}/*/*
 
+strip --strip-unneeded $RPM_BUILD_ROOT%{_libdir}/gtk/themes/engines/*.so
+
 %find_lang %{name}
 
 %clean
@@ -58,3 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfigdir}/xfce
 %{_mandir}/*/*
 %{_datadir}/xfce
+
+%files -n gtk-theme-xfce
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/gtk/themes/engines/*
