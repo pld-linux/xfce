@@ -9,22 +9,21 @@ Summary(ru):	Среда рабочего стола XFCE
 Summary(uk):	Середовище робочого столу XFCE
 Summary(zh_CN):	XFCE вюцФ╩╥╬Ё, ╢Ьсп╢╟©з╧эюМфВ╨м╧╓╬ъю╦
 Name:		xfce
-Version:	3.8.16
-Release:	3
+Version:	3.8.18
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/xfce/%{name}-%{version}.tar.gz
 Source1:	xfsamba.desktop
 Source2:	xfsamba.png
 URL:		http://www.xfce.org/
-Requires:	imlib-cfgeditor
-Requires:	gtk-theme-xfce
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	libtool
+Requires:	gtk-theme-xfce
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -92,7 +91,12 @@ lokalnej bez u©ywania smbmount.
 %setup -q
 
 %build
-%configure2_13 \
+rm -rf missing
+%{__libtoolize}
+%{__aclocal}
+%{__autoconf}
+%{__automake}
+%configure \
 	--disable-dt \
 	--enable-gdk-pixbuf \
 	--disable-imlib \
