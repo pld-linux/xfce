@@ -17,6 +17,7 @@ Source0:	http://www.xfce.org/archive/%{name}-%{version}.tar.gz
 Source1:	xfsamba.desktop
 URL:		http://www.xfce.org/
 Requires:	imlib-cfgeditor
+Requires:	gtk-theme-xfce
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gdk-pixbuf-devel
@@ -77,11 +78,11 @@ bez u¿ywania smbmount.
 rm -f acinclude.m4
 
 %build
-libtoolize --copy --force
-gettextize --copy --force
-aclocal
-autoconf
-automake -a -c
+#libtoolize --copy --force
+#gettextize --copy --force
+#aclocal
+#autoconf
+#automake -a -c
 %configure \
 	--disable-dt \
 	--enable-gdk-pixbuf \
