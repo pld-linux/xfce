@@ -2,7 +2,7 @@ Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
 Name:		xfce
 Version:	3.5.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
@@ -56,10 +56,7 @@ gettextize --copy --force
 rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README* AUTHORS TODO NEWS ChangeLog \
-	$RPM_BUILD_ROOT%{_mandir}/*/*
-
-strip --strip-unneeded $RPM_BUILD_ROOT%{_libdir}/gtk/themes/engines/*.so
+gzip -9nf README* AUTHORS TODO NEWS ChangeLog
 
 %find_lang %{name}
 
