@@ -13,7 +13,7 @@ License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
-Source0:	http://www.xfce.org/archive/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/xfce/%{name}-%{version}.tar.gz
 Source1:	xfsamba.desktop
 URL:		http://www.xfce.org/
 Requires:	imlib-cfgeditor
