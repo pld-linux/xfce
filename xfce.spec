@@ -36,7 +36,7 @@ LDFLAGS="-s"; export LDFLAGS
 %configure \
 	--disable-dt
 
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
