@@ -10,7 +10,7 @@ Summary(uk):	Середовище робочого столу XFCE
 Summary(zh_CN):	XFCE вюцФ╩╥╬Ё, ╢Ьсп╢╟©з╧эюМфВ╨м╧╓╬ъю╦
 Name:		xfce
 Version:	3.8.18
-Release:	6
+Release:	7
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/xfce/%{name}-%{version}.tar.gz
@@ -60,7 +60,7 @@ outros tipos de Unix.
 %package -n gtk-theme-xfce
 Summary:	Xfce gtk+ theme
 Summary(pl):	Motyw do gtk+ dla xfce
-Group:		Themes/Gtk
+Group:		Themes/GTK+
 
 %description -n gtk-theme-xfce
 Xfce Gtk+ engine theme.
