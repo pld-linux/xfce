@@ -10,7 +10,6 @@ Source:		http://www.xfce.org/archive/%{name}-%{version}.tar.gz
 URL:		http://www.xfce.org
 Requires:	imlib-cfgeditor
 BuildRequires:	gettext-devel
-BuildRequires:	XFree86-devel
 BuildRequires:	imlib-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	xpm-devel
