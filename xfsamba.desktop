@@ -6,6 +6,6 @@ Icon=xfsamba.png
 Exec=xfsamba
 Terminal=false
 Type=Application
-Categories=Network
+Categories=Network;
 Encoding=UTF-8
 # vi: encoding=utf-8
