@@ -2,12 +2,13 @@
 # TODO:	
 # - xfsamba needs an icon.
 #
+%define		_xfsamba_ver	0.28
 
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
 Name:		xfce
 Version:	3.8.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
@@ -53,6 +54,8 @@ Temat do gtk+ dla xfce.
 %package -n xfsamba
 Summary:	Xfsamba - SMB network navigator without mounting
 Summary(pl):	Xfsamba - przegl±danie zasobów SMB bez mountowania ich
+Version:	%{_xfsamba_ver}
+Epoch:		1
 Group:		X11/Applications/Networking
 Group(pl):	X11/Aplikacje/Sieciowe
 Group(de):	X11/Applikationen/Netzwerkwesen
