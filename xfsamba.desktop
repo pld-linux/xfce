@@ -2,9 +2,10 @@
 Name=xfsamba
 Name[pl]=xfsamba
 Comment=Graphical SMB browser
-Comment[pl]=Graficzny eksplorator zasobów udostêpnianych poprzez SMB
+Comment[pl]=Graficzny eksplorator zasobÃ³w udostÄ™pnianych poprzez SMB
 Icon=
 Exec=xfsamba
 Terminal=0
 Type=Application
 
+# vi: encoding=utf-8
