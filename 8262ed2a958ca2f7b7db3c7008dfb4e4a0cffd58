@@ -1,0 +1,4 @@
+- updated to 3.8.2,
+- enable using gdk-pixbuf and disable imlib (current version allows this and
+  this is very good change),
+- added --enable-xinerama to autoconf parameters.
