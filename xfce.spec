@@ -8,7 +8,7 @@ Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
 Name:		xfce
 Version:	3.8.14
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/xfce/%{name}-%{version}.tar.gz
