@@ -86,10 +86,11 @@ automake -a -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
+%{__install} -d $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-%{__install} -d $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc/
-%{__install} %{SOURCE1} RPM_BUILD_ROOT%{_applnkdir}/Network/Misc/
+%{__install} %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
 
 gzip -9nf README* AUTHORS TODO NEWS ChangeLog
 
