@@ -1,7 +1,4 @@
 #
-# TODO:
-# - xfsamba needs an icon.
-#
 %define		_xfsamba_ver	0.34
 
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
@@ -12,11 +9,12 @@ Summary(ru):	Среда рабочего стола XFCE
 Summary(uk):	Середовище робочого столу XFCE
 Name:		xfce
 Version:	3.8.16
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/xfce/%{name}-%{version}.tar.gz
 Source1:	xfsamba.desktop
+Source2:	xfsamba.png
 URL:		http://www.xfce.org/
 Requires:	imlib-cfgeditor
 Requires:	gtk-theme-xfce
@@ -92,7 +90,6 @@ lokalnej bez u©ywania smbmount.
 %prep
 %setup -q
 
-
 %build
 %configure2_13 \
 	--disable-dt \
@@ -104,13 +101,12 @@ lokalnej bez u©ywania smbmount.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
+install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network/Misc,%{_pixmapsdir}}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
-
-gzip -9nf README* AUTHORS TODO NEWS ChangeLog xfsamba/README xfsamba/TODO xfsamba/ChangeLog
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %find_lang %{name}
 
@@ -119,7 +115,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README* AUTHORS TODO NEWS ChangeLog
 %attr(755,root,root) %{_bindir}/CDE2Xfcepal
 %attr(755,root,root) %{_bindir}/glob
 %attr(755,root,root) %{_bindir}/startxfce
@@ -142,6 +138,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/xfplay
 %attr(755,root,root) %{_bindir}/xfprint
 %attr(755,root,root) %{_bindir}/xfrun
+%attr(755,root,root) %{_bindir}/xfskin
 %attr(755,root,root) %{_bindir}/xfsound
 %attr(755,root,root) %{_bindir}/xfterm
 %attr(755,root,root) %{_bindir}/xftrash
@@ -159,6 +156,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n xfsamba
 %defattr(644,root,root,755)
-%doc xfsamba/*.gz
+%doc xfsamba/{README,TODO,ChangeLog}
 %attr(755,root,root) %{_bindir}/xfsamba
 %{_applnkdir}/Network/Misc/*
+%{_pixmapsdir}/*.png
