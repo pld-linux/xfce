@@ -1,5 +1,5 @@
 #
-# TODO:	
+# TODO:
 # - xfsamba needs an icon.
 #
 %define		_xfsamba_ver	0.33.2
@@ -29,12 +29,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_sysconfigdir	/etc
 
 %description
-XFce is an easy-to-use and easy-to-configure environment using the popular 
-GTK+ toolkit for X11, featuring drag'n drop, pulldown menus and color icons, 
-3D widgets, etc. It features its own Window Manager (xfwm), a backdrop
-manager (xfbd), a file manager (xftree), a clock/calendar (xfclock) and 
-a system sound manager (xfsound) and a user friendly interface for mouse
-configuration (xfmouse).
+XFce is an easy-to-use and easy-to-configure environment using the
+popular GTK+ toolkit for X11, featuring drag'n drop, pulldown menus
+and color icons, 3D widgets, etc. It features its own Window Manager
+(xfwm), a backdrop manager (xfbd), a file manager (xftree), a
+clock/calendar (xfclock) and a system sound manager (xfsound) and a
+user friendly interface for mouse configuration (xfmouse).
 
 %description -l pl
 XFce jest niewielkim, ale posiadaj±cym du¿e mo¿liwo¶ci ¶rodowiskiem
@@ -50,7 +50,7 @@ Group:		Themes/Gtk
 %description -n gtk-theme-xfce
 Xfce Gtk+ engine theme.
 
-%description -l pl -n gtk-theme-xfce
+%description -n gtk-theme-xfce -l pl
 Temat do gtk+ dla xfce.
 
 %package -n xfsamba
@@ -65,11 +65,11 @@ Requires:	samba-client
 Xfsamba is an SMB network navigator with downloading, uploading and
 browsing. It does not mount remote SMB shares any time.
 
-%description -l pl -n xfsamba
-Xfsamba jest programem do przegl±dania zasobów udostêpnianych przez SMB.
-Jednak, w przeciwieñstwie do wiêkszo¶ci tego typu programów, jest to
-robione poprzez smbclient'a. Dziêki temu mo¿emy "szperaæ" w sieci lokalnej
-bez u¿ywania smbmount.
+%description -n xfsamba -l pl
+Xfsamba jest programem do przegl±dania zasobów udostêpnianych przez
+SMB. Jednak, w przeciwieñstwie do wiêkszo¶ci tego typu programów, jest
+to robione poprzez smbclient'a. Dziêki temu mo¿emy "szperaæ" w sieci
+lokalnej bez u¿ywania smbmount.
 
 %prep
 %setup -q
