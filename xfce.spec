@@ -2,12 +2,12 @@
 # TODO:	
 # - xfsamba needs an icon.
 #
-%define		_xfsamba_ver	0.29
+%define		_xfsamba_ver	0.33.2
 
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
 Name:		xfce
-Version:	3.8.3
+Version:	3.8.10
 Release:	1
 License:	GPL
 Group:		X11/Applications
@@ -31,13 +31,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_sysconfigdir	/etc
 
 %description
-XFce is a lightweight and powerfull desktop environment for Linux and
-various UNIX flavour. It has it's own toolbar and window manager.
+XFce is an easy-to-use and easy-to-configure environment using the popular 
+GTK+ toolkit for X11, featuring drag'n drop, pulldown menus and color icons, 
+3D widgets, etc. It features its own Window Manager (xfwm), a backdrop
+manager (xfbd), a file manager (xftree), a clock/calendar (xfclock) and 
+a system sound manager (xfsound) and a user friendly interface for mouse
+configuration (xfmouse).
 
 %description -l pl
 XFce jest niewielkim, ale posiadaj±cym du¿e mo¿liwo¶ci ¶rodowiskiem
-dla Linuxa i innych odmian UNIXa. XFce posiada w³asy pasek na¿êdzi
-oraz mened¿er okien.
+dla Linuxa i innych odmian UNIXa. XFce posiada w³asy pasek narzêdzi
+oraz mened¿er okien. Zawiera wiele w³asnych u¿ytecznych narzêdzi:
+xfbd, xftree, xfclock, xfsound, xfmouse...
 
 %package -n gtk-theme-xfce
 Summary:	Xfce gtk+ theme
@@ -75,15 +80,9 @@ bez u¿ywania smbmount.
 %prep
 %setup -q
 
-rm -f acinclude.m4
 
 %build
-libtoolize --copy --force
-gettextize --copy --force
-aclocal
-autoconf
-automake -a -c
-%configure \
+%configure2_13 \
 	--disable-dt \
 	--enable-gdk-pixbuf \
 	--disable-imlib \
@@ -135,10 +134,12 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/xfterm
 %attr(755,root,root) %{_bindir}/xftrash
 %attr(755,root,root) %{_bindir}/xftree
+%attr(755,root,root) %{_bindir}/xfumed
 %attr(755,root,root) %{_bindir}/xfwm
-%{_sysconfigdir}/xfce
-%{_mandir}/*/*
+%attr(644,root,root) %{_mandir}/man*/*
 %{_datadir}/xfce
+%dir %{_sysconfigdir}/xfce
+%attr(644,root,root) %{_sysconfigdir}/xfce/*
 
 %files -n gtk-theme-xfce
 %defattr(644,root,root,755)
