@@ -1,5 +1,5 @@
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
-Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien.
+Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
 Name:		xfce
 Version:	3.3.3
 Release:	1
@@ -34,14 +34,15 @@ i innych odmian UNIXa. XFce posiada w³asy pasek na¿êdzi oraz mened¿er okien.
 gettextize --copy --force
 LDFLAGS="-s"; export LDFLAGS
 %configure \
-     --disable-dt
+	--disable-dt
 
 make
 
 %install
+rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README* INSTALL AUTHORS COPYING TODO NEWS ChangeLog \
+gzip -9nf README* AUTHORS TODO NEWS ChangeLog \
 	$RPM_BUILD_ROOT%{_mandir}/*/*
 
 %find_lang %{name}
