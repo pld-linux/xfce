@@ -106,7 +106,8 @@ rm -f po/zh.po
 	--disable-static \
 	--enable-gdk-pixbuf \
 	--disable-imlib \
-	--enable-xinerama
+	--enable-xinerama \
+	--enable-gtk-engine=%{_libdir}/gtk/themes/engines
 
 %{__make}
 
