@@ -28,7 +28,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		%{_prefix}/man
-%define		_sysconfigdir	/etc
 
 %description
 XFce is an easy-to-use and easy-to-configure environment using the
@@ -153,8 +152,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/xfwm
 %attr(644,root,root) %{_mandir}/man*/*
 %{_datadir}/xfce
-%dir %{_sysconfigdir}/xfce
-%attr(644,root,root) %{_sysconfigdir}/xfce/*
+%dir %{_sysconfdir}/xfce
+%attr(644,root,root) %{_sysconfdir}/xfce/*
 
 %files -n gtk-theme-xfce
 %defattr(644,root,root,755)
