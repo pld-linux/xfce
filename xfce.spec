@@ -46,6 +46,8 @@ Temat do gtk+ dla xfce.
 %prep
 %setup -q
 
+rm -f acinclude.m4
+
 %build
 gettextize --copy --force
 aclocal
