@@ -3,7 +3,7 @@
 
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(es):	Un ambiente X poderoso, con una barra de tareas y un administrador de ventanas
-Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
+Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i zarz±dc± okien
 Summary(pt_BR):	Um ambiente X poderoso, com uma barra de tarefas e um gerenciador de janelas
 Summary(ru):	óÒÅÄÁ ÒÁÂÏŞÅÇÏ ÓÔÏÌÁ XFCE
 Summary(uk):	óÅÒÅÄÏ×ÉİÅ ÒÏÂÏŞÏÇÏ ÓÔÏÌÕ XFCE
@@ -45,7 +45,7 @@ y poderoso para Linux y varios tipos de Unix.
 %description -l pl
 XFce jest niewielkim, ale posiadaj±cym du¿e mo¿liwo¶ci ¶rodowiskiem
 dla Linuksa i innych odmian UNIXa. XFce posiada w³asy pasek narzêdzi
-oraz mened¿er okien. Zawiera wiele w³asnych u¿ytecznych narzêdzi:
+oraz zarz±dcê okien. Zawiera wiele w³asnych u¿ytecznych narzêdzi:
 xfbd, xftree, xfclock, xfsound, xfmouse...
 
 %description -l pt_BR
