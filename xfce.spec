@@ -60,14 +60,14 @@ outros tipos de Unix.
 
 %package -n gtk-theme-xfce
 Summary:	Xfce gtk+ theme
-Summary(pl):	Temat do gtk+ dla xfce
+Summary(pl):	Motyw do gtk+ dla xfce
 Group:		Themes/Gtk
 
 %description -n gtk-theme-xfce
 Xfce Gtk+ engine theme.
 
 %description -n gtk-theme-xfce -l pl
-Temat do gtk+ dla xfce.
+Motyw do gtk+ dla xfce.
 
 %package -n xfsamba
 Summary:	Xfsamba - SMB network navigator without mounting
