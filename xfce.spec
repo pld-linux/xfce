@@ -10,7 +10,7 @@ Summary(uk):	óÅÒÅÄÏ×ÉÝÅ ÒÏÂÏÞÏÇÏ ÓÔÏÌÕ XFCE
 Summary(zh_CN):	XFCE ×ÀÃæ»·¾³, ´øÓÐ´°¿Ú¹ÜÀíÆ÷ºÍ¹¤¾ßÀ¸
 Name:		xfce
 Version:	3.8.18
-Release:	5
+Release:	6
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/xfce/%{name}-%{version}.tar.gz
@@ -18,6 +18,7 @@ Source0:	http://dl.sourceforge.net/xfce/%{name}-%{version}.tar.gz
 Source1:	xfsamba.desktop
 Source2:	xfsamba.png
 Source3:	%{name}-xsession.desktop
+Patch0:		%{name}-po.patch
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake >= 1.4
@@ -87,6 +88,7 @@ lokalnej bez u¿ywania smbmount.
 
 %prep
 %setup -q
+%patch0 -p1
 
 mv -f po/{sr,sr@Latn}.po
 mv -f po/{zh_TW.Big5,zh_TW}.po
