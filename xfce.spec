@@ -2,13 +2,13 @@
 # TODO:	
 # - xfsamba needs an icon.
 #
-%define		_xfsamba_ver	0.28
+%define		_xfsamba_ver	0.29
 
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
 Name:		xfce
 Version:	3.8.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
