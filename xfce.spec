@@ -16,6 +16,7 @@ Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/xfce/%{name}-%{version}.tar.gz
 Source1:	xfsamba.desktop
 Source2:	xfsamba.png
+Source3:	%{name}-xsession.desktop
 URL:		http://www.xfce.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -106,12 +107,13 @@ rm -rf missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network/Misc,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_datadir}/xsessions,%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
+install %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/xsessions/%{name}.desktop
 
 %find_lang %{name}
 
@@ -152,6 +154,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/xfwm
 %attr(644,root,root) %{_mandir}/man*/*
 %{_datadir}/xfce
+%{_datadir}/xsessions/%{name}.desktop
 %dir %{_sysconfdir}/xfce
 %attr(644,root,root) %{_sysconfdir}/xfce/*
 
@@ -163,5 +166,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc xfsamba/{README,TODO,ChangeLog}
 %attr(755,root,root) %{_bindir}/xfsamba
-%{_applnkdir}/Network/Misc/*
-%{_pixmapsdir}/*.png
+%{_desktopdir}/xfsamba.desktop
+%{_pixmapsdir}/xfsamba.png
