@@ -12,7 +12,7 @@ Version:	3.8.16
 Release:	3
 License:	GPL
 Group:		X11/Applications
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/xfce/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/xfce/%{name}-%{version}.tar.gz
 Source1:	xfsamba.desktop
 Source2:	xfsamba.png
 URL:		http://www.xfce.org/
