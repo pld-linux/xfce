@@ -10,6 +10,8 @@ Group(pl):	X11/Aplikacje
 Source0:	http://www.xfce.org/archive/%{name}-%{version}.tar.gz
 URL:		http://www.xfce.org/
 Requires:	imlib-cfgeditor
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	imlib-devel
 BuildRequires:	gtk+-devel
@@ -46,6 +48,9 @@ Temat do gtk+ dla xfce.
 
 %build
 gettextize --copy --force
+aclocal
+autoconf
+automake -a -c
 %configure \
 	--disable-dt
 
