@@ -7,7 +7,7 @@ Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
 Name:		xfce
 Version:	3.8.1
-Release:	2
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
@@ -19,8 +19,9 @@ Requires:	imlib-cfgeditor
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	imlib-devel
 BuildRequires:	gtk+-devel
+BuildRequires:	imlib-devel
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -73,6 +74,7 @@ bez u¿ywania smbmount.
 rm -f acinclude.m4
 
 %build
+libtoolize --copy --force
 gettextize --copy --force
 aclocal
 autoconf
