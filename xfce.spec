@@ -52,21 +52,21 @@ O XFce И um ambiente de trabalho leve e poderoso para o Linux e vАrios
 outros tipos de Unix.
 
 %description -l ru
-Среда рабочего стола основанная на gtk+ и напоминающая CDE.
+Среда рабочего стола основанная на GTK+ и напоминающая CDE.
 
 %description -l uk
-Середовище робочого столу, що базу╓ться на gtk+ та нагаду╓ CDE.
+Середовище робочого столу, що базу╓ться на GTK+ та нагаду╓ CDE.
 
 %package -n gtk-theme-xfce
-Summary:	Xfce gtk+ theme
-Summary(pl):	Motyw do gtk+ dla xfce
+Summary:	Xfce GTK+ theme
+Summary(pl):	Motyw do GTK+ dla xfce
 Group:		Themes/GTK+
 
 %description -n gtk-theme-xfce
-Xfce Gtk+ engine theme.
+Xfce GTK+ engine theme.
 
 %description -n gtk-theme-xfce -l pl
-Motyw do gtk+ dla xfce.
+Motyw do GTK+ dla xfce.
 
 %package -n xfsamba
 Summary:	Xfsamba - SMB network navigator without mounting
