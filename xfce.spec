@@ -44,7 +44,7 @@ y poderoso para Linux y varios tipos de Unix.
 
 %description -l pl
 XFce jest niewielkim, ale posiadaj±cym du¿e mo¿liwo¶ci ¶rodowiskiem
-dla Linuksa i innych odmian UNIXa. XFce posiada w³asy pasek narzêdzi
+dla Linuksa i innych odmian UNIXa. XFce posiada w³asny pasek narzêdzi
 oraz zarz±dcê okien. Zawiera wiele w³asnych u¿ytecznych narzêdzi:
 xfbd, xftree, xfclock, xfsound, xfmouse...
 
