@@ -1,18 +1,19 @@
 #
 # TODO:	
-# - xfsamba needs desktop-file and icon.
+# - xfsamba needs an icon.
 #
 
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
 Name:		xfce
 Version:	3.8.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
 Source0:	http://www.xfce.org/archive/%{name}-%{version}.tar.gz
+Source1:	xfsamba.desktop
 URL:		http://www.xfce.org/
 Requires:	imlib-cfgeditor
 BuildRequires:	autoconf
@@ -85,6 +86,9 @@ automake -a -c
 rm -rf $RPM_BUILD_ROOT
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
+%{__install} -d $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc/
+%{__install} %{SOURCE1} RPM_BUILD_ROOT%{_applnkdir}/Network/Misc/
+
 gzip -9nf README* AUTHORS TODO NEWS ChangeLog
 
 %find_lang %{name}
@@ -133,3 +137,4 @@ rm -rf $RPM_BUILD_ROOT
 %files -n xfsamba
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/xfsamba
+%{_applnkdir}/Network/Misc/*
