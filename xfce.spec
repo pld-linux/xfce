@@ -98,6 +98,7 @@ rm -rf missing
 %{__automake}
 %configure \
 	--disable-dt \
+	--disable-static \
 	--enable-gdk-pixbuf \
 	--disable-imlib \
 	--enable-xinerama
@@ -157,7 +158,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n gtk-theme-xfce
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/gtk/themes/engines/*
+%attr(755,root,root) %{_libdir}/gtk/themes/engines/*.so
 
 %files -n xfsamba
 %defattr(644,root,root,755)
