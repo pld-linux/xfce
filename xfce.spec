@@ -11,8 +11,6 @@ Version:	3.8.14
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Group(de):	X11/Applikationen
-Group(pl):	X11/Aplikacje
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/xfce/%{name}-%{version}.tar.gz
 Source1:	xfsamba.desktop
 URL:		http://www.xfce.org/
@@ -48,8 +46,6 @@ xfbd, xftree, xfclock, xfsound, xfmouse...
 Summary:	Xfce gtk+ theme
 Summary(pl):	Temat do gtk+ dla xfce
 Group:		Themes/Gtk
-Group(de):	Themen/Gtk
-Group(pl):	Motywy/Gtk
 
 %description -n gtk-theme-xfce
 Xfce Gtk+ engine theme.
@@ -63,8 +59,6 @@ Summary(pl):	Xfsamba - przegl±danie zasobów SMB bez mountowania ich
 Version:	%{_xfsamba_ver}
 Epoch:		1
 Group:		X11/Applications/Networking
-Group(pl):	X11/Aplikacje/Sieciowe
-Group(de):	X11/Applikationen/Netzwerkwesen
 Requires:	samba-client
 
 %description -n xfsamba
