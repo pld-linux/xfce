@@ -29,6 +29,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		%{_prefix}/man
+%define		_libdir		/usr/lib
 
 %description
 XFce is an easy-to-use and easy-to-configure environment using the
