@@ -6,7 +6,7 @@
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
 Name:		xfce
-Version:	3.8.1
+Version:	3.8.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
@@ -18,9 +18,9 @@ URL:		http://www.xfce.org/
 Requires:	imlib-cfgeditor
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel
-BuildRequires:	imlib-devel
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -80,7 +80,10 @@ aclocal
 autoconf
 automake -a -c
 %configure \
-	--disable-dt
+	--disable-dt \
+	--enable-gdk-pixbuf \
+	--disable-imlib \
+	--enable-xinerama
 
 %{__make}
 
