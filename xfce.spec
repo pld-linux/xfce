@@ -5,10 +5,14 @@
 %define		_xfsamba_ver	0.33.2
 
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
+Summary(es):	Un ambiente X poderoso, con una barra de tareas y un administrador de ventanas
 Summary(pl):	╕rodowisko dla X z paskiem narzЙdzi i mened©erem okien
+Summary(pt_BR):	Um ambiente X poderoso, com uma barra de tarefas e um gerenciador de janelas
+Summary(ru):	Среда рабочего стола XFCE
+Summary(uk):	Середовище робочого столу XFCE
 Name:		xfce
-Version:	3.8.14
-Release:	2
+Version:	3.8.16
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/xfce/%{name}-%{version}.tar.gz
@@ -36,11 +40,25 @@ and color icons, 3D widgets, etc. It features its own Window Manager
 clock/calendar (xfclock) and a system sound manager (xfsound) and a
 user friendly interface for mouse configuration (xfmouse).
 
+%description -l es
+XFce es un ambiente de trabajo simple, que ocupa poca memoria, rАpido
+y poderoso para Linux y varios tipos de Unix.
+
 %description -l pl
 XFce jest niewielkim, ale posiadaj╠cym du©e mo©liwo╤ci ╤rodowiskiem
 dla Linuxa i innych odmian UNIXa. XFce posiada wЁasy pasek narzЙdzi
 oraz mened©er okien. Zawiera wiele wЁasnych u©ytecznych narzЙdzi:
 xfbd, xftree, xfclock, xfsound, xfmouse...
+
+%description -l pt_BR
+O XFce И um ambiente de trabalho leve e poderoso para o Linux e vАrios
+outros tipos de Unix.
+
+%description -l ru
+Среда рабочего стола основанная на gtk+ и напоминающая CDE.
+
+%description -l uk
+Середовище робочого столу, що базу╓ться на gtk+ та нагаду╓ CDE.
 
 %package -n gtk-theme-xfce
 Summary:	Xfce gtk+ theme
