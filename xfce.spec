@@ -1,4 +1,4 @@
-#
+
 %define		_xfsamba_ver	0.34
 
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
@@ -10,7 +10,7 @@ Summary(uk):	óÅÒÅÄÏ×ÉÝÅ ÒÏÂÏÞÏÇÏ ÓÔÏÌÕ XFCE
 Summary(zh_CN):	XFCE ×ÀÃæ»·¾³, ´øÓÐ´°¿Ú¹ÜÀíÆ÷ºÍ¹¤¾ßÀ¸
 Name:		xfce
 Version:	3.8.18
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/xfce/%{name}-%{version}.tar.gz
@@ -19,11 +19,11 @@ Source1:	xfsamba.desktop
 Source2:	xfsamba.png
 Source3:	%{name}-xsession.desktop
 URL:		http://www.xfce.org/
-BuildRequires:	autoconf
-BuildRequires:	automake
+BuildRequires:	autoconf >= 2.52
+BuildRequires:	automake >= 1.4
 BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	gettext-devel
-BuildRequires:	gtk+-devel
+BuildRequires:	gtk+-devel >= 1.2.6
 BuildRequires:	libtool
 Requires:	gtk-theme-xfce
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -88,11 +88,18 @@ lokalnej bez u¿ywania smbmount.
 %prep
 %setup -q
 
+mv -f po/{sr,sr@Latn}.po
+mv -f po/{zh_TW.Big5,zh_TW}.po
+# looks like some older copy of zh_CN
+rm -f po/zh.po
+
+%{__perl} -pi -e 's/ sr / sr\@Latn /;s/ zh / /;s/zh_TW\.Big5/zh_TW/' configure.in
+
 %build
-rm -rf missing
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure \
 	--disable-dt \
@@ -107,7 +114,8 @@ rm -rf missing
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_datadir}/xsessions,%{_desktopdir},%{_pixmapsdir}}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
