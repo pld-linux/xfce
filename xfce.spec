@@ -6,7 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Group(pl):	X11/Aplikacje
-Source:		http://www.xfce.org/archive/%{name}-%{version}.tar.gz
+Source0:	http://www.xfce.org/archive/%{name}-%{version}.tar.gz
 URL:		http://www.xfce.org
 Requires:	imlib-cfgeditor
 BuildRequires:	gettext-devel
@@ -23,8 +23,9 @@ XFce is a lightweight and powerfull desktop environment for Linux and
 various UNIX flavour. It has it's own toolbar and window manager.
 
 %description -l pl
-XFce jest niewielkim, ale posiadaj±cym du¿e mo¿liwo¶ci ¶rodowiskiem dla Linuxa
-i innych odmian UNIXa. XFce posiada w³asy pasek na¿êdzi oraz mened¿er okien.
+XFce jest niewielkim, ale posiadaj±cym du¿e mo¿liwo¶ci ¶rodowiskiem
+dla Linuxa i innych odmian UNIXa. XFce posiada w³asy pasek na¿êdzi
+oraz mened¿er okien.
 
 %prep
 %setup -q
