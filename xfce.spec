@@ -10,7 +10,7 @@ Summary(uk):	Середовище робочого столу XFCE
 Summary(zh_CN):	XFCE вюцФ╩╥╬Ё, ╢Ьсп╢╟©з╧эюМфВ╨м╧╓╬ъю╦
 Name:		xfce
 Version:	3.8.18
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/xfce/%{name}-%{version}.tar.gz
