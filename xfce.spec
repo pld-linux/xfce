@@ -7,6 +7,7 @@ Summary(pl):	╕rodowisko dla X z paskiem narzЙdzi i zarz╠dc╠ okien
 Summary(pt_BR):	Um ambiente X poderoso, com uma barra de tarefas e um gerenciador de janelas
 Summary(ru):	Среда рабочего стола XFCE
 Summary(uk):	Середовище робочого столу XFCE
+Summary(zh_CN):	XFCE вюцФ╩╥╬Ё, ╢Ьсп╢╟©з╧эюМфВ╨м╧╓╬ъю╦
 Name:		xfce
 Version:	3.8.16
 Release:	3
