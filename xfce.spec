@@ -1,73 +1,44 @@
-# RPM spec file for XFce
-%define		Version	3.1.2
-%define		Name	xfce
-%define		Datadir	/var
-%define		Basedir	/usr/X11R6
-
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
-Name:		%{Name}
-Version:	%{Version}
+Name:		xfce
+Version:	3.1.2
 Release:	1
-Copyright:	GPL
+License:	GPL
 Group:		X11/Applications
+Group(pl):	X11/Aplikacje
 Source:		%{name}-%{version}.tar.gz
+Patch:		%{name}-DESTDIR.patch
 URL:		http://www.xfce.org
-Vendor:		Olivier Fourdan <fourdan@xfce.org>
-Packager:	Olivier Fourdan <fourdan@xfce.org>
+BuildRoot:	/tmp/%{name}-%{version}-root
+
+%define		_prefix		/usr/X11R6
+%define		_mandir		%{_prefix}/man
 
 %description
-XFce is a lightweight and powerfull desktop environment for Linux and various UNIX
-flavour.
+XFce is a lightweight and powerfull desktop environment for Linux and
+various UNIX flavour.
 
 %prep
-%setup
-./configure -prefix=%{Basedir} --datadir=%{Datadir} --disable-dt
+%setup -q
+%patch -p1
+gettextize --copy --force
+LDFLAGS="-s"; export LDFLAGS
+%configure \
+     --disable-dt
 
 %build
 make
 
 %install
-make install-strip
+make install DESTDIR=$RPM_BUILD_ROOT
+
+gzip -9nf README INSTALL ChangeLog $RPM_BUILD_ROOT%{_mandir}/*/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post
-echo
-echo CONGRATULATIONS ! You\'ve got XFce setup on your computer !
-echo
-echo Now execute \"xfce_setup\" to make XFce your default desktop environment,
-echo \(even if you\'re upgrading from a previous version, this is also recommended\),
-echo and restart your X session to enjoy XFce Desktop environment.
-echo
-
 %files
-%doc README INSTALL ChangeLog
-%{Basedir}/bin/xfce
-%{Basedir}/bin/xfwm
-%{Basedir}/bin/xftree
-%{Basedir}/bin/xfsound
-%{Basedir}/bin/xfbd
-%{Basedir}/bin/xfpager
-%{Basedir}/bin/xfmouse
-%{Basedir}/bin/xfclock
-%{Basedir}/bin/xfplay
-%{Basedir}/bin/xfhelp
-%{Basedir}/bin/xfprint
-%{Basedir}/bin/xftrash
-%{Basedir}/bin/xfterm
-%{Basedir}/bin/xfce_setup
-%{Basedir}/bin/xfce_remove
-%{Basedir}/man/man1/xfbd.1
-%{Basedir}/man/man1/xfce.1
-%{Basedir}/man/man1/xfclock.1
-%{Basedir}/man/man1/xfmouse.1
-%{Basedir}/man/man1/xfpager.1
-%{Basedir}/man/man1/xfsound.1
-%{Basedir}/man/man1/xftree.1
-%{Basedir}/man/man1/xfwm.1
-%{Basedir}/man/man1/xfhelp.1
-%{Basedir}/man/man1/xfprint.1
-%{Basedir}/man/man1/xftrash.1
-%{Basedir}/man/man1/xfterm.1
-%{Datadir}/XFCE
+%defattr(644,root,root,755)
+%doc {README,INSTALL,ChangeLog}.gz
+%attr(755,root,root) %{_bindir}/*
+%{_mandir}/man1/*.gz
+%{_datadir}/XFCE
