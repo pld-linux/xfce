@@ -8,7 +8,7 @@ Group(pl):	X11/Aplikacje
 Source:		%{name}-%{version}.tar.gz
 Patch:		%{name}-DESTDIR.patch
 URL:		http://www.xfce.org
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		%{_prefix}/man
