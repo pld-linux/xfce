@@ -1,7 +1,7 @@
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i mened¿erem okien
 Name:		xfce
-Version:	3.7.1
+Version:	3.7.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
