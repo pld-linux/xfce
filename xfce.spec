@@ -2,7 +2,7 @@
 # TODO:
 # - xfsamba needs an icon.
 #
-%define		_xfsamba_ver	0.33.2
+%define		_xfsamba_ver	0.34
 
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(es):	Un ambiente X poderoso, con una barra de tareas y un administrador de ventanas
@@ -12,7 +12,7 @@ Summary(ru):	Среда рабочего стола XFCE
 Summary(uk):	Середовище робочого столу XFCE
 Name:		xfce
 Version:	3.8.16
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/xfce/%{name}-%{version}.tar.gz
@@ -110,7 +110,7 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
 
-gzip -9nf README* AUTHORS TODO NEWS ChangeLog
+gzip -9nf README* AUTHORS TODO NEWS ChangeLog xfsamba/README xfsamba/TODO xfsamba/ChangeLog
 
 %find_lang %{name}
 
@@ -159,5 +159,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n xfsamba
 %defattr(644,root,root,755)
+%doc xfsamba/*.gz
 %attr(755,root,root) %{_bindir}/xfsamba
 %{_applnkdir}/Network/Misc/*
