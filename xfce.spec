@@ -13,7 +13,6 @@ Requires:	imlib-cfgeditor
 BuildRequires:	gettext-devel
 BuildRequires:	imlib-devel
 BuildRequires:	gtk+-devel
-BuildRequires:	xpm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
