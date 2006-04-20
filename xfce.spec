@@ -5,9 +5,9 @@ Summary:	A Powerfull X Environment, with Toolbar and Window Manager
 Summary(es):	Un ambiente X poderoso, con una barra de tareas y un administrador de ventanas
 Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i zarz±dc± okien
 Summary(pt_BR):	Um ambiente X poderoso, com uma barra de tarefas e um gerenciador de janelas
-Summary(ru):	óÒÅÄÁ ÒÁÂÏŞÅÇÏ ÓÔÏÌÁ XFCE
-Summary(uk):	óÅÒÅÄÏ×ÉİÅ ÒÏÂÏŞÏÇÏ ÓÔÏÌÕ XFCE
-Summary(zh_CN):	XFCE ×ÀÃæ»·¾³, ´øÓĞ´°¿Ú¹ÜÀíÆ÷ºÍ¹¤¾ßÀ¸
+Summary(ru):	óÒÅÄÁ ÒÁÂÏŞÅÇÏ ÓÔÏÌÁ Xfce
+Summary(uk):	óÅÒÅÄÏ×ÉİÅ ÒÏÂÏŞÏÇÏ ÓÔÏÌÕ Xfce
+Summary(zh_CN):	Xfce ×ÀÃæ»·¾³, ´øÓĞ´°¿Ú¹ÜÀíÆ÷ºÍ¹¤¾ßÀ¸
 Name:		xfce
 Version:	3.8.18
 Release:	7
@@ -43,7 +43,7 @@ y poderoso para Linux y varios tipos de Unix.
 
 %description -l pl
 Xfce jest niewielkim, ale posiadaj±cym du¿e mo¿liwo¶ci ¶rodowiskiem
-dla Linuksa i innych odmian UNIXa. XFce posiada w³asny pasek narzêdzi
+dla Linuksa i innych odmian UNIXa. Xfce posiada w³asny pasek narzêdzi
 oraz zarz±dcê okien. Zawiera wiele w³asnych u¿ytecznych narzêdzi:
 xfbd, xftree, xfclock, xfsound, xfmouse...
 
