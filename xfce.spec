@@ -30,7 +30,7 @@ Requires:	gtk-theme-xfce
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-XFce is an easy-to-use and easy-to-configure environment using the
+Xfce is an easy-to-use and easy-to-configure environment using the
 popular GTK+ toolkit for X11, featuring drag'n drop, pulldown menus
 and color icons, 3D widgets, etc. It features its own Window Manager
 (xfwm), a backdrop manager (xfbd), a file manager (xftree), a
@@ -38,17 +38,17 @@ clock/calendar (xfclock) and a system sound manager (xfsound) and a
 user friendly interface for mouse configuration (xfmouse).
 
 %description -l es
-XFce es un ambiente de trabajo simple, que ocupa poca memoria, rápido
+Xfce es un ambiente de trabajo simple, que ocupa poca memoria, rápido
 y poderoso para Linux y varios tipos de Unix.
 
 %description -l pl
-XFce jest niewielkim, ale posiadaj±cym du¿e mo¿liwo¶ci ¶rodowiskiem
+Xfce jest niewielkim, ale posiadaj±cym du¿e mo¿liwo¶ci ¶rodowiskiem
 dla Linuksa i innych odmian UNIXa. XFce posiada w³asny pasek narzêdzi
 oraz zarz±dcê okien. Zawiera wiele w³asnych u¿ytecznych narzêdzi:
 xfbd, xftree, xfclock, xfsound, xfmouse...
 
 %description -l pt_BR
-O XFce é um ambiente de trabalho leve e poderoso para o Linux e vários
+O Xfce é um ambiente de trabalho leve e poderoso para o Linux e vários
 outros tipos de Unix.
 
 %description -l ru
@@ -59,14 +59,14 @@ outros tipos de Unix.
 
 %package -n gtk-theme-xfce
 Summary:	Xfce GTK+ theme
-Summary(pl):	Motyw do GTK+ dla xfce
-Group:		Themes/GTK+
+Summary(pl):	Motyw do GTK+ dla Xfce
+Grousp:		Themes/GTK+
 
 %description -n gtk-theme-xfce
 Xfce GTK+ engine theme.
 
 %description -n gtk-theme-xfce -l pl
-Motyw do GTK+ dla xfce.
+Motyw do GTK+ dla Xfce.
 
 %package -n xfsamba
 Summary:	Xfsamba - SMB network navigator without mounting
