@@ -1,0 +1,183 @@
+diff -ur xfce-3.8.18/po.orig/bg.po xfce-3.8.18/po/bg.po
+--- xfce-3.8.18/po.orig/bg.po	Sun Sep  1 20:10:32 2002
++++ xfce-3.8.18/po/bg.po	Tue Aug  3 00:20:07 2004
+@@ -16,7 +16,7 @@
+ "Language-Team: LANGUAGE\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=CP1251\n"
+-"Content-Transfer-Encoding: ENCODING\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: libs/colorselect.c:91 xfclock/xfclock_colorsel.c:77
+ #: xfdiff/xfdiff_colorsel.c:85
+diff -ur xfce-3.8.18/po.orig/ca.po xfce-3.8.18/po/ca.po
+--- xfce-3.8.18/po.orig/ca.po	Sun Sep  1 20:10:32 2002
++++ xfce-3.8.18/po/ca.po	Tue Aug  3 00:22:49 2004
+@@ -7,7 +7,6 @@
+ #: xfsamba/xfsamba_gui.c:1347 xftree/xtree_toolbar.c:93
+ #: xftree/xtree_toolbar.c:99 xftree/xtree_toolbar.c:104
+ #: xftree/xtree_toolbar.c:108 xftree/xtree_toolbar.c:112
+-#, fuzzy
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: PACKAGE VERSION\n"
+@@ -16,8 +15,8 @@
+ "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+ "Language-Team: LANGUAGE <LL@li.org>\n"
+ "MIME-Version: 1.0\n"
+-"Content-Type: text/plain; charset=CHARSET\n"
+-"Content-Transfer-Encoding: ENCODING\n"
++"Content-Type: text/plain; charset=iso-8859-1\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: libs/colorselect.c:91 xfclock/xfclock_colorsel.c:77
+ #: xfdiff/xfdiff_colorsel.c:85
+diff -ur xfce-3.8.18/po.orig/en_GB.po xfce-3.8.18/po/en_GB.po
+--- xfce-3.8.18/po.orig/en_GB.po	Sun Sep  1 20:10:32 2002
++++ xfce-3.8.18/po/en_GB.po	Tue Aug  3 00:22:10 2004
+@@ -7,7 +7,6 @@
+ #: xfsamba/xfsamba_gui.c:1347 xftree/xtree_toolbar.c:93
+ #: xftree/xtree_toolbar.c:99 xftree/xtree_toolbar.c:104
+ #: xftree/xtree_toolbar.c:108 xftree/xtree_toolbar.c:112
+-#, fuzzy
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: xfce-3.8.5\n"
+diff -ur xfce-3.8.18/po.orig/fi.po xfce-3.8.18/po/fi.po
+--- xfce-3.8.18/po.orig/fi.po	Sun Sep  1 20:10:33 2002
++++ xfce-3.8.18/po/fi.po	Tue Aug  3 00:22:34 2004
+@@ -7,7 +7,6 @@
+ #: xfsamba/xfsamba_gui.c:1347 xftree/xtree_toolbar.c:93
+ #: xftree/xtree_toolbar.c:99 xftree/xtree_toolbar.c:104
+ #: xftree/xtree_toolbar.c:108 xftree/xtree_toolbar.c:112
+-#, fuzzy
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: PACKAGE VERSION\n"
+@@ -16,8 +15,8 @@
+ "Last-Translator: Ismo Jokinen <ismo@joki.net>\n"
+ "Language-Team: LANGUAGE <LL@li.org>\n"
+ "MIME-Version: 1.0\n"
+-"Content-Type: text/plain; charset=CHARSET\n"
+-"Content-Transfer-Encoding: ENCODING\n"
++"Content-Type: text/plain; charset=iso-8859-1\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: libs/colorselect.c:91 xfclock/xfclock_colorsel.c:77
+ #: xfdiff/xfdiff_colorsel.c:85
+diff -ur xfce-3.8.18/po.orig/ja.po xfce-3.8.18/po/ja.po
+--- xfce-3.8.18/po.orig/ja.po	Sun Sep  1 20:10:34 2002
++++ xfce-3.8.18/po/ja.po	Tue Aug  3 00:22:18 2004
+@@ -7,7 +7,6 @@
+ #: xfsamba/xfsamba_gui.c:1347 xftree/xtree_toolbar.c:93
+ #: xftree/xtree_toolbar.c:99 xftree/xtree_toolbar.c:104
+ #: xftree/xtree_toolbar.c:108 xftree/xtree_toolbar.c:112
+-#, fuzzy
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: xfce-3.8.14c\n"
+diff -ur xfce-3.8.18/po.orig/pl.po xfce-3.8.18/po/pl.po
+--- xfce-3.8.18/po.orig/pl.po	Sun Sep  1 20:10:34 2002
++++ xfce-3.8.18/po/pl.po	Tue Aug  3 00:21:58 2004
+@@ -7,7 +7,6 @@
+ #: xfsamba/xfsamba_gui.c:1347 xftree/xtree_toolbar.c:93
+ #: xftree/xtree_toolbar.c:99 xftree/xtree_toolbar.c:104
+ #: xftree/xtree_toolbar.c:108 xftree/xtree_toolbar.c:112
+-#, fuzzy
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: PACKAGE VERSION\n"
+@@ -17,7 +16,7 @@
+ "Language-Team: LANGUAGE <LL@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=ISO-8859-2\n"
+-"Content-Transfer-Encoding: ENCODING\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: libs/colorselect.c:91 xfclock/xfclock_colorsel.c:77
+ #: xfdiff/xfdiff_colorsel.c:85
+diff -ur xfce-3.8.18/po.orig/ro.po xfce-3.8.18/po/ro.po
+--- xfce-3.8.18/po.orig/ro.po	Sun Sep  1 20:10:34 2002
++++ xfce-3.8.18/po/ro.po	Tue Aug  3 00:21:46 2004
+@@ -16,7 +16,7 @@
+ "Language-Team: LANGUAGE <LL@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=ISO-8859-1\n"
+-"Content-Transfer-Encoding: ENCODING\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: libs/colorselect.c:91 xfclock/xfclock_colorsel.c:77
+ #: xfdiff/xfdiff_colorsel.c:85
+diff -ur xfce-3.8.18/po.orig/ru.po xfce-3.8.18/po/ru.po
+--- xfce-3.8.18/po.orig/ru.po	Sun Sep  1 20:10:34 2002
++++ xfce-3.8.18/po/ru.po	Tue Aug  3 00:22:58 2004
+@@ -7,7 +7,6 @@
+ #: xfsamba/xfsamba_gui.c:1347 xftree/xtree_toolbar.c:93
+ #: xftree/xtree_toolbar.c:99 xftree/xtree_toolbar.c:104
+ #: xftree/xtree_toolbar.c:108 xftree/xtree_toolbar.c:112
+-#, fuzzy
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: PACKAGE VERSION\n"
+@@ -17,7 +16,7 @@
+ "Language-Team: LANGUAGE <LL@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=koi8-r\n"
+-"Content-Transfer-Encoding: ENCODING\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: libs/colorselect.c:91 xfclock/xfclock_colorsel.c:77
+ #: xfdiff/xfdiff_colorsel.c:85
+diff -ur xfce-3.8.18/po.orig/sk.po xfce-3.8.18/po/sk.po
+--- xfce-3.8.18/po.orig/sk.po	Sun Sep  1 20:10:34 2002
++++ xfce-3.8.18/po/sk.po	Tue Aug  3 00:20:57 2004
+@@ -7,7 +7,6 @@
+ #: xfsamba/xfsamba_gui.c:1347 xftree/xtree_toolbar.c:93
+ #: xftree/xtree_toolbar.c:99 xftree/xtree_toolbar.c:104
+ #: xftree/xtree_toolbar.c:108 xftree/xtree_toolbar.c:112
+-#, fuzzy
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: 3.4.x\n"
+diff -ur xfce-3.8.18/po.orig/sv.po xfce-3.8.18/po/sv.po
+--- xfce-3.8.18/po.orig/sv.po	Sun Sep  1 20:10:35 2002
++++ xfce-3.8.18/po/sv.po	Tue Aug  3 00:20:42 2004
+@@ -6,7 +6,6 @@
+ #: xfsamba/xfsamba_gui.c:1347 xftree/xtree_toolbar.c:93
+ #: xftree/xtree_toolbar.c:99 xftree/xtree_toolbar.c:104
+ #: xftree/xtree_toolbar.c:108 xftree/xtree_toolbar.c:112
+-#, fuzzy
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: PACKAGE VERSION\n"
+@@ -15,8 +14,8 @@
+ "Last-Translator: Joakim Andreasson <joakim.andreasson@gmx.net>\n"
+ "Language-Team: Yours Truly <joakim.andreasson@gmx.net>\n"
+ "MIME-Version: 1.0\n"
+-"Content-Type: text/plain; charset=CHARSET\n"
+-"Content-Transfer-Encoding: ENCODING\n"
++"Content-Type: text/plain; charset=iso-8859-1\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: libs/colorselect.c:91 xfclock/xfclock_colorsel.c:77
+ #: xfdiff/xfdiff_colorsel.c:85
+diff -ur xfce-3.8.18/po.orig/zh_CN.po xfce-3.8.18/po/zh_CN.po
+--- xfce-3.8.18/po.orig/zh_CN.po	Sun Sep  1 20:10:35 2002
++++ xfce-3.8.18/po/zh_CN.po	Tue Aug  3 00:20:24 2004
+@@ -7,7 +7,6 @@
+ #: xfsamba/xfsamba_gui.c:1347 xftree/xtree_toolbar.c:93
+ #: xftree/xtree_toolbar.c:99 xftree/xtree_toolbar.c:104
+ #: xftree/xtree_toolbar.c:108 xftree/xtree_toolbar.c:112
+-#, fuzzy
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: PACKAGE VERSION\n"
+@@ -17,7 +16,7 @@
+ "Language-Team: LANGUAGE <LL@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=gb2312\n"
+-"Content-Transfer-Encoding: gb2312\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: libs/colorselect.c:91 xfclock/xfclock_colorsel.c:77
+ #: xfdiff/xfdiff_colorsel.c:85
