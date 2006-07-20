@@ -60,7 +60,7 @@ outros tipos de Unix.
 %package -n gtk-theme-xfce
 Summary:	Xfce GTK+ theme
 Summary(pl):	Motyw do GTK+ dla Xfce
-Grousp:		Themes/GTK+
+Group:		Themes/GTK+
 
 %description -n gtk-theme-xfce
 Xfce GTK+ engine theme.
