@@ -161,11 +161,11 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/xftree
 %attr(755,root,root) %{_bindir}/xfumed
 %attr(755,root,root) %{_bindir}/xfwm
-%attr(644,root,root) %{_mandir}/man*/*
+%{_mandir}/man*/*
 %{_datadir}/xfce
 %{_datadir}/xsessions/%{name}.desktop
 %dir %{_sysconfdir}/xfce
-%attr(644,root,root) %{_sysconfdir}/xfce/*
+%{_sysconfdir}/xfce/*
 
 %files -n gtk-theme-xfce
 %defattr(644,root,root,755)
