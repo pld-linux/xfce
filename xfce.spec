@@ -2,12 +2,12 @@
 %define		_xfsamba_ver	0.34
 
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
-Summary(es.UTF-8):   Un ambiente X poderoso, con una barra de tareas y un administrador de ventanas
-Summary(pl.UTF-8):   Środowisko dla X z paskiem narzędzi i zarządcą okien
-Summary(pt_BR.UTF-8):   Um ambiente X poderoso, com uma barra de tarefas e um gerenciador de janelas
-Summary(ru.UTF-8):   Среда рабочего стола Xfce
-Summary(uk.UTF-8):   Середовище робочого столу Xfce
-Summary(zh_CN.UTF-8):   Xfce 桌面环境, 带有窗口管理器和工具栏
+Summary(es.UTF-8):	Un ambiente X poderoso, con una barra de tareas y un administrador de ventanas
+Summary(pl.UTF-8):	Środowisko dla X z paskiem narzędzi i zarządcą okien
+Summary(pt_BR.UTF-8):	Um ambiente X poderoso, com uma barra de tarefas e um gerenciador de janelas
+Summary(ru.UTF-8):	Среда рабочего стола Xfce
+Summary(uk.UTF-8):	Середовище робочого столу Xfce
+Summary(zh_CN.UTF-8):	Xfce 桌面环境, 带有窗口管理器和工具栏
 Name:		xfce
 Version:	3.8.18
 Release:	7
@@ -59,7 +59,7 @@ outros tipos de Unix.
 
 %package -n gtk-theme-xfce
 Summary:	Xfce GTK+ theme
-Summary(pl.UTF-8):   Motyw do GTK+ dla Xfce
+Summary(pl.UTF-8):	Motyw do GTK+ dla Xfce
 Group:		Themes/GTK+
 
 %description -n gtk-theme-xfce
@@ -70,7 +70,7 @@ Motyw do GTK+ dla Xfce.
 
 %package -n xfsamba
 Summary:	Xfsamba - SMB network navigator without mounting
-Summary(pl.UTF-8):   Xfsamba - przeglądanie zasobów SMB bez mountowania ich
+Summary(pl.UTF-8):	Xfsamba - przeglądanie zasobów SMB bez mountowania ich
 Version:	%{_xfsamba_ver}
 Epoch:		1
 Group:		X11/Applications/Networking
