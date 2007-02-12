@@ -2,12 +2,12 @@
 %define		_xfsamba_ver	0.34
 
 Summary:	A Powerfull X Environment, with Toolbar and Window Manager
-Summary(es):	Un ambiente X poderoso, con una barra de tareas y un administrador de ventanas
-Summary(pl):	¦rodowisko dla X z paskiem narzêdzi i zarz±dc± okien
-Summary(pt_BR):	Um ambiente X poderoso, com uma barra de tarefas e um gerenciador de janelas
-Summary(ru):	óÒÅÄÁ ÒÁÂÏŞÅÇÏ ÓÔÏÌÁ Xfce
-Summary(uk):	óÅÒÅÄÏ×ÉİÅ ÒÏÂÏŞÏÇÏ ÓÔÏÌÕ Xfce
-Summary(zh_CN):	Xfce ×ÀÃæ»·¾³, ´øÓĞ´°¿Ú¹ÜÀíÆ÷ºÍ¹¤¾ßÀ¸
+Summary(es.UTF-8):   Un ambiente X poderoso, con una barra de tareas y un administrador de ventanas
+Summary(pl.UTF-8):   Åšrodowisko dla X z paskiem narzÄ™dzi i zarzÄ…dcÄ… okien
+Summary(pt_BR.UTF-8):   Um ambiente X poderoso, com uma barra de tarefas e um gerenciador de janelas
+Summary(ru.UTF-8):   Ğ¡Ñ€ĞµĞ´Ğ° Ñ€Ğ°Ğ±Ğ¾Ñ‡ĞµĞ³Ğ¾ ÑÑ‚Ğ¾Ğ»Ğ° Xfce
+Summary(uk.UTF-8):   Ğ¡ĞµÑ€ĞµĞ´Ğ¾Ğ²Ğ¸Ñ‰Ğµ Ñ€Ğ¾Ğ±Ğ¾Ñ‡Ğ¾Ğ³Ğ¾ ÑÑ‚Ğ¾Ğ»Ñƒ Xfce
+Summary(zh_CN.UTF-8):   Xfce æ¡Œé¢ç¯å¢ƒ, å¸¦æœ‰çª—å£ç®¡ç†å™¨å’Œå·¥å…·æ 
 Name:		xfce
 Version:	3.8.18
 Release:	7
@@ -37,40 +37,40 @@ and color icons, 3D widgets, etc. It features its own Window Manager
 clock/calendar (xfclock) and a system sound manager (xfsound) and a
 user friendly interface for mouse configuration (xfmouse).
 
-%description -l es
-Xfce es un ambiente de trabajo simple, que ocupa poca memoria, rápido
+%description -l es.UTF-8
+Xfce es un ambiente de trabajo simple, que ocupa poca memoria, rÃ¡pido
 y poderoso para Linux y varios tipos de Unix.
 
-%description -l pl
-Xfce jest niewielkim, ale posiadaj±cym du¿e mo¿liwo¶ci ¶rodowiskiem
-dla Linuksa i innych odmian UNIXa. Xfce posiada w³asny pasek narzêdzi
-oraz zarz±dcê okien. Zawiera wiele w³asnych u¿ytecznych narzêdzi:
+%description -l pl.UTF-8
+Xfce jest niewielkim, ale posiadajÄ…cym duÅ¼e moÅ¼liwoÅ›ci Å›rodowiskiem
+dla Linuksa i innych odmian UNIXa. Xfce posiada wÅ‚asny pasek narzÄ™dzi
+oraz zarzÄ…dcÄ™ okien. Zawiera wiele wÅ‚asnych uÅ¼ytecznych narzÄ™dzi:
 xfbd, xftree, xfclock, xfsound, xfmouse...
 
-%description -l pt_BR
-O Xfce é um ambiente de trabalho leve e poderoso para o Linux e vários
+%description -l pt_BR.UTF-8
+O Xfce Ã© um ambiente de trabalho leve e poderoso para o Linux e vÃ¡rios
 outros tipos de Unix.
 
-%description -l ru
-óÒÅÄÁ ÒÁÂÏŞÅÇÏ ÓÔÏÌÁ ÏÓÎÏ×ÁÎÎÁÑ ÎÁ GTK+ É ÎÁĞÏÍÉÎÁÀİÁÑ CDE.
+%description -l ru.UTF-8
+Ğ¡Ñ€ĞµĞ´Ğ° Ñ€Ğ°Ğ±Ğ¾Ñ‡ĞµĞ³Ğ¾ ÑÑ‚Ğ¾Ğ»Ğ° Ğ¾ÑĞ½Ğ¾Ğ²Ğ°Ğ½Ğ½Ğ°Ñ Ğ½Ğ° GTK+ Ğ¸ Ğ½Ğ°Ğ¿Ğ¾Ğ¼Ğ¸Ğ½Ğ°ÑÑ‰Ğ°Ñ CDE.
 
-%description -l uk
-óÅÒÅÄÏ×ÉİÅ ÒÏÂÏŞÏÇÏ ÓÔÏÌÕ, İÏ ÂÁÚÕ¤ÔØÓÑ ÎÁ GTK+ ÔÁ ÎÁÇÁÄÕ¤ CDE.
+%description -l uk.UTF-8
+Ğ¡ĞµÑ€ĞµĞ´Ğ¾Ğ²Ğ¸Ñ‰Ğµ Ñ€Ğ¾Ğ±Ğ¾Ñ‡Ğ¾Ğ³Ğ¾ ÑÑ‚Ğ¾Ğ»Ñƒ, Ñ‰Ğ¾ Ğ±Ğ°Ğ·ÑƒÑ”Ñ‚ÑŒÑÑ Ğ½Ğ° GTK+ Ñ‚Ğ° Ğ½Ğ°Ğ³Ğ°Ğ´ÑƒÑ” CDE.
 
 %package -n gtk-theme-xfce
 Summary:	Xfce GTK+ theme
-Summary(pl):	Motyw do GTK+ dla Xfce
+Summary(pl.UTF-8):   Motyw do GTK+ dla Xfce
 Group:		Themes/GTK+
 
 %description -n gtk-theme-xfce
 Xfce GTK+ engine theme.
 
-%description -n gtk-theme-xfce -l pl
+%description -n gtk-theme-xfce -l pl.UTF-8
 Motyw do GTK+ dla Xfce.
 
 %package -n xfsamba
 Summary:	Xfsamba - SMB network navigator without mounting
-Summary(pl):	Xfsamba - przegl±danie zasobów SMB bez mountowania ich
+Summary(pl.UTF-8):   Xfsamba - przeglÄ…danie zasobÃ³w SMB bez mountowania ich
 Version:	%{_xfsamba_ver}
 Epoch:		1
 Group:		X11/Applications/Networking
@@ -80,11 +80,11 @@ Requires:	samba-client
 Xfsamba is an SMB network navigator with downloading, uploading and
 browsing. It does not mount remote SMB shares any time.
 
-%description -n xfsamba -l pl
-Xfsamba jest programem do przegl±dania zasobów udostêpnianych przez
-SMB. Jednak, w przeciwieñstwie do wiêkszo¶ci tego typu programów, jest
-to robione poprzez smbclient'a. Dziêki temu mo¿emy "szperaæ" w sieci
-lokalnej bez u¿ywania smbmount.
+%description -n xfsamba -l pl.UTF-8
+Xfsamba jest programem do przeglÄ…dania zasobÃ³w udostÄ™pnianych przez
+SMB. Jednak, w przeciwieÅ„stwie do wiÄ™kszoÅ›ci tego typu programÃ³w, jest
+to robione poprzez smbclient'a. DziÄ™ki temu moÅ¼emy "szperaÄ‡" w sieci
+lokalnej bez uÅ¼ywania smbmount.
 
 %prep
 %setup -q
